@@ -1,0 +1,2891 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>KD Tech - Tienda de Tecnología</title>
+
+
+    <!-- FAVICON / LOGO -->
+
+
+    <link rel="icon" href="/static/img/logo de tienda.png" type="image/png">
+
+
+
+    <!-- BOOTSTRAP CSS -->
+
+
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        rel="stylesheet">
+
+
+
+    <!-- BOOTSTRAP ICONS -->
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+
+
+    <!-- FONT AWESOME -->
+
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+
+
+    <!-- CSS -->
+
+
+    <link rel="stylesheet" href="/static/css/stilos.css">
+
+</head>
+
+
+<body>
+
+
+
+<!-- NAVBAR -->
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+
+    <div class="container-fluid">
+
+        <!-- LOGO -->
+
+        <a class="navbar-brand fw-bold" href="#inicio">
+
+            <i class="bi bi-pc-display"></i>
+
+            KD Tech
+
+        </a>
+
+
+        <!-- BOTÓN RESPONSIVE -->
+
+        <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarKDTech"
+            aria-controls="navbarKDTech"
+            aria-expanded="false"
+            aria-label="Mostrar navegación">
+
+            <span class="navbar-toggler-icon"></span>
+
+        </button>
+
+
+        <!-- CONTENIDO NAVBAR -->
+
+        <div class="collapse navbar-collapse" id="navbarKDTech">
+
+            <ul class="navbar-nav ms-auto align-items-lg-center">
+
+
+                <!-- INICIO -->
+
+                <li class="nav-item">
+
+                    <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="#inicio">
+
+                        <i class="bi bi-house-door"></i>
+
+                        Inicio
+
+                    </a>
+
+                </li>
+
+
+                <!-- TIENDA -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#tienda">
+
+                        <i class="bi bi-shop"></i>
+
+                        Tienda
+
+                    </a>
+
+                </li>
+
+
+                <!-- OFERTAS -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#ofertas">
+
+                        <i class="bi bi-tags"></i>
+
+                        Ofertas
+
+                    </a>
+
+                </li>
+
+
+                <!-- EVENTOS -->
+
+                <li class="nav-item">
+
+                    <a class="nav-link" href="#eventos">
+
+                        <i class="bi bi-calendar-event"></i>
+
+                        Eventos
+
+                    </a>
+
+                </li>
+
+
+                <!-- CONTACTO -->
+
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#contacto"
+                        id="contactoDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <i class="bi bi-envelope"></i>
+
+                        Contactenos
+
+                    </a>
+
+
+                    <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="contactoDropdown">
+
+                        <li>
+
+                            <a class="dropdown-item" href="#contacto">
+
+                                <i class="bi bi-person-lines-fill"></i>
+
+                                Información de contacto
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item" href="#contacto">
+
+                                <i class="bi bi-whatsapp"></i>
+
+                                WhatsApp
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item" href="#contacto">
+
+                                <i class="bi bi-envelope"></i>
+
+                                Correo electrónico
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- CATEGORÍAS -->
+
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#categorias"
+                        id="categoriaDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <i class="bi bi-grid"></i>
+
+                        Categoría
+
+                    </a>
+
+
+                    <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="categoriaDropdown">
+
+                        <li>
+
+                            <a class="dropdown-item" href="#tienda">
+
+                                <i class="bi bi-pc-display"></i>
+
+                                PC Gamers
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item" href="#portatiles">
+
+                                <i class="bi bi-laptop"></i>
+
+                                Portátiles
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item" href="#tienda">
+
+                                <i class="bi bi-keyboard"></i>
+
+                                Periféricos
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <a class="dropdown-item" href="#tienda">
+
+                                <i class="bi bi-headphones"></i>
+
+                                Audio
+
+                            </a>
+
+                        </li>
+
+
+                        <li>
+
+                            <hr class="dropdown-divider">
+
+                        </li>
+
+
+                        <li>
+
+                            <a
+                                class="dropdown-item fw-bold"
+                                href="#categorias">
+
+                                <i class="bi bi-grid-3x3-gap"></i>
+
+                                Ver todas las categorías
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- MARCAS -->
+
+                <li class="nav-item dropdown">
+
+                    <a
+                        class="nav-link dropdown-toggle"
+                        href="#marcas"
+                        id="marcaDropdown"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false">
+
+                        <i class="bi bi-award"></i>
+
+                        Marcas
+
+                    </a>
+
+
+                    <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="marcaDropdown">
+
+                        <li>
+                            <a class="dropdown-item" href="#marcas">
+                                ASUS
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#marcas">
+                                MSI
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#marcas">
+                                Lenovo
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#marcas">
+                                HP
+                            </a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#marcas">
+                                Acer
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <hr class="dropdown-divider">
+
+                        </li>
+
+                        <li>
+
+                            <a
+                                class="dropdown-item fw-bold"
+                                href="#marcas">
+
+                                <i class="bi bi-award"></i>
+
+                                Ver todas las marcas
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- CARRITO -->
+
+                <li class="nav-item ms-lg-3">
+
+                    <button
+                        class="btn btn-dark position-relative"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#carritoOffcanvas"
+                        aria-controls="carritoOffcanvas">
+
+                        <i class="bi bi-cart3"></i>
+
+                        Carrito
+
+                        <span
+                            class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+
+                            2
+
+                        </span>
+
+                    </button>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+
+<!-- INICIO / CARRUSEL -->
+
+
+<section id="inicio">
+
+    <div
+        id="carouselKDTech"
+        class="carousel slide carousel-fade kd-carousel"
+        data-bs-ride="carousel"
+        data-bs-interval="4000">
+
+
+        <!-- INDICADORES -->
+
+        <div class="carousel-indicators">
+
+            <button
+                type="button"
+                data-bs-target="#carouselKDTech"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1">
+            </button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="1" aria-label="Slide 2"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="2" aria-label="Slide 3"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="3" aria-label="Slide 4"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="4" aria-label="Slide 5"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="5" aria-label="Slide 6"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="6" aria-label="Slide 7"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="7" aria-label="Slide 8"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="8" aria-label="Slide 9"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="9" aria-label="Slide 10"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="10" aria-label="Slide 11"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="11" aria-label="Slide 12"></button>
+
+            <button type="button" data-bs-target="#carouselKDTech" data-bs-slide-to="12" aria-label="Slide 13"></button>
+
+        </div>
+
+
+
+        <!-- SLIDES - SE CONSERVAN LAS 13 IMÁGENES ORIGINALES -->
+
+
+        <div class="carousel-inner">
+
+
+            <!-- IMAGEN 1 -->
+
+            <div class="carousel-item active">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTU6Rt4t5JJqrG2rHC469Kzc_ZO-8xfjM8AdutrvgSRtg&s=10"
+                    class="d-block w-100"
+                    alt="Computadora básica">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>PC Gamer Basic</h5>
+
+                    <p>
+                        Computadora básica para gaming.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 2 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://img.magnific.com/foto-gratis/configuracion-juegos-alto-angulo-computadora_23-2149829138.jpg?semt=ais_hybrid&w=740&q=80"
+                    class="d-block w-100"
+                    alt="PC Gamer">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>PC Gamer</h5>
+
+                    <p>
+                        Computadora para videojuegos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 3 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQrzmW31IrkbfrHMb37aC6VcVUvBVSdvtcSM8pcQiXh2oBcyVOedHjs8Wh&s=10"
+                    class="d-block w-100"
+                    alt="PC Basic">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>PC Basic</h5>
+
+                    <p>
+                        Computadora de escritorio.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 4 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQI-TOPhRdbnAkH8iIP6xmzpuJRVQBh5AMdMxNLxLqWg&s=10"
+                    class="d-block w-100"
+                    alt="Periféricos">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Periféricos</h5>
+
+                    <p>
+                        Combo periféricos.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 5 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqR477wE9TgBCKoxHhDJ2quN-39Ut4Ek1d8DSjd9fdtWdZfuERCfSn8Ene&s=10"
+                    class="d-block w-100"
+                    alt="Portátil Gamer">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Portátil Gamer</h5>
+
+                    <p>
+                        Computadora para jugar a máxima potencia.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 6 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://www.pcware.com.co/wp-content/uploads/2024/05/459027_12.jpg"
+                    class="d-block w-100"
+                    alt="PC de escritorio">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>PC de escritorio</h5>
+
+                    <p>
+                        Computadora para tareas de oficina.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 7 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://www.nvidia.com/content/dam/en-zz/Solutions/geforce/graphic-cards/50-series/geforce-rtx-50series-og-1200x630.jpg"
+                    class="d-block w-100"
+                    alt="Tarjeta gráfica">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Tarjeta gráfica</h5>
+
+                    <p>
+                        Tarjeta gráfica NVIDIA.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 8 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://www.technocio.com/wp-content/uploads/2025/08/Muebles-gamer-1.jpg"
+                    class="d-block w-100"
+                    alt="Escritorio Gamer">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Escritorio Gamer</h5>
+
+                    <p>
+                        Más espacio para tu comodidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 9 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgGZOj0wv16n8rffABo6AbuJKKkMWP3bUP35rkPekkfSdA0NWGF2zCs3s&s=10"
+                    class="d-block w-100"
+                    alt="Chasis Gamer">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Chasis Gamer</h5>
+
+                    <p>
+                        Más estilo para tu setup.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 10 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://www.muycomputerpro.com/wp-content/uploads/2022/01/Dell-XPS-13-Plus_4.jpg"
+                    class="d-block w-100"
+                    alt="Portátil">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Portátiles</h5>
+
+                    <p>
+                        Un portátil para tu comodidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 11 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://img.global.news.samsung.com/latin/wp-content/uploads/2018/10/monitor1_1.png"
+                    class="d-block w-100"
+                    alt="Monitor">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Monitores</h5>
+
+                    <p>
+                        Un monitor a tu medida.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 12 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://st3.depositphotos.com/1719616/31937/i/450/depositphotos_319375484-stock-photo-wireless-computer-mouse-on-black.jpg"
+                    class="d-block w-100"
+                    alt="Mouse">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Mouse</h5>
+
+                    <p>
+                        Mouse para tu comodidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- IMAGEN 13 -->
+
+            <div class="carousel-item">
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFIottJ2QPMK0GG7qrsGFeAu7I7pnWDSTNt9TI4takTg&s=10"
+                    class="d-block w-100"
+                    alt="Teclado">
+
+                <div class="carousel-caption d-none d-md-block">
+
+                    <h5>Teclado</h5>
+
+                    <p>
+                        Teclados para tu comodidad.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- BOTÓN ANTERIOR -->
+
+        <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselKDTech"
+            data-bs-slide="prev">
+
+            <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true">
+            </span>
+
+            <span class="visually-hidden">
+                Anterior
+            </span>
+
+        </button>
+
+
+        <!-- BOTÓN SIGUIENTE -->
+
+        <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselKDTech"
+            data-bs-slide="next">
+
+            <span
+                class="carousel-control-next-icon"
+                aria-hidden="true">
+            </span>
+
+            <span class="visually-hidden">
+                Siguiente
+            </span>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- TIENDA - PC GAMERS -->
+
+
+<section id="tienda" class="py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-primary mb-2">
+                KD TECH
+            </span>
+
+            <h2 class="fw-bold">
+                PC Gamers
+            </h2>
+
+            <p class="text-muted">
+                Encuentra los mejores computadores para gaming
+                y alto rendimiento.
+            </p>
+
+        </div>
+
+
+        <div class="row align-items-center g-4">
+
+
+            <!-- IMAGEN PRINCIPAL  -->
+
+            <div class="col-md-8">
+
+                <img
+                    src="/static/img/Megatron.png"
+                    class="img-fluid rounded"
+                    alt="Computadora gamer">
+
+            </div>
+
+
+            <!-- CARD  -->
+
+            <div class="col-md-4">
+
+                <div class="card shadow-sm border-0 h-100">
+
+                    <img
+                        src="/static/img/Computadora AMD Ryzen 7.jpg"
+                        class="card-img-top"
+                        alt="PC gamer">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Las mejores PC Gamers del 2026
+                        </h5>
+
+                        <p class="card-text text-muted">
+
+                            Diseña, juega, estudia, trabaja o crea
+                            contenido con los equipos y computadores
+                            SPEED con la mejor configuración calidad
+                            precio de 2026.
+
+                        </p>
+
+                        <a
+                            href="#ofertas"
+                            class="btn btn-primary">
+
+                            Ver ofertas
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+<!-- OFERTAS PC GAMERS -->
+
+
+<section id="ofertas" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-danger mb-2">
+                OFERTAS
+            </span>
+
+            <h2 class="fw-bold">
+                🔥 Ofertas en PC Gamers
+            </h2>
+
+            <p class="text-muted">
+                Descuentos exclusivos por tiempo limitado.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- OFERTA PC 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-danger badge-descuento">
+                        -10% OFF
+                    </span>
+
+                    <img
+                        src="/static/img/Computadora Intel core I7.jpg"
+                        class="card-img-top"
+                        alt="PC Intel Core i7">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            PC para juegos
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            Computador Intel Core i7 14700 |
+                            16GB RAM | 512GB NVMe |
+                            Monitor ASUS 27″
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: Intel Core i7 14700<br>
+                            Refrigeración: FAN A400C ARGB<br>
+                            RAM: 16GB DDR4 | SSD: 512GB<br>
+                            Chasis: POWER CL-W78 |
+                            Board: B760M WiFi<br>
+                            Monitor: ASUS 27″ IPS FHD
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $3,959,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $3,563,000 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="bi bi-cart-plus"></i>
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PC 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -10% OFF
+                    </span>
+
+                    <img
+                        src="https://gtech.systems/wp-content/uploads/2019/09/WhatsApp-Image-2022-11-17-at-5.07.06-PM-1.png"
+                        class="card-img-top"
+                        alt="PC Gamer">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            PC para juegos
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PC Gamer NVIDIA BATTLEBOX SUPER - RTX 5060
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Tarjeta de Video: RTX 5060 8GB<br>
+                            Procesador: AMD Ryzen 7600X<br>
+                            Board: Chipset B650M WI-FI<br>
+                            Fuente: 700W 80+ Bronce<br>
+                            Almacenamiento: 1TB M.2 NVMe
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $5,134,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $4,363,800 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="bi bi-cart-plus"></i>
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PC 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -10% OFF
+                    </span>
+
+                    <img
+                        src="https://gtech.systems/wp-content/uploads/2016/03/11-e1558743296579.png"
+                        class="card-img-top"
+                        alt="PC Gamer">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            PC para juegos
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PC Gamer NVIDIA BATTLEBOX ESSENTIAL - RTX 5050
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Tarjeta de Video: RTX 5050 8GB<br>
+                            Procesador: AMD Ryzen 5 4500<br>
+                            Board: Chipset B550 Wi-Fi<br>
+                            Memoria RAM: 16GB 3200MHz<br>
+                            SSD: 1TB M.2 NVMe
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $3,416,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $3,074,400 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="bi bi-cart-plus"></i>
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PC 4 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-danger badge-descuento">
+                        -10% OFF
+                    </span>
+
+                    <img
+                        src="https://gtech.systems/wp-content/uploads/2016/03/pc-gamer-titan-v2-intel-8va-gen-nvidia-gtx-1060-3gb-8gb-ram-1tb_iZ84XvZgrandeXpZ1XfZ63153024-51035998895-4XsZ63153024xIM1-768x768.jpg"
+                        class="card-img-top"
+                        alt="PC Gamer">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            PC para juegos
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PC Gamer Titán V3 - RX 7600
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Tarjeta de Video: AMD RX 6600 8GB<br>
+                            Procesador: AMD Ryzen 5 4500<br>
+                            Board: Chipset B450<br>
+                            Memoria RAM: 8GB 3200MHz<br>
+                            SSD: 512GB NVMe
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $2,599,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $2,299,000 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="bi bi-cart-plus"></i>
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PC 5 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -10% OFF
+                    </span>
+
+                    <img
+                        src="https://gtech.systems/wp-content/uploads/2019/06/Glacius-Black2-1.png"
+                        class="card-img-top"
+                        alt="PC Gamer">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            PC para juegos
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PC Monster A: Ryzen 5 5600G Vega Graphics
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: AMD Ryzen 5 5600GT<br>
+                            Gráfico: AMD Radeon VEGA Cores<br>
+                            Board: Chipset A520<br>
+                            RAM: 8GB 3200Mhz |
+                            SSD: 240GB SATA3
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $1,599,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $1,359,150 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="bi bi-cart-plus"></i>
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PC 6 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -10% OFF
+                    </span>
+
+                    <img
+                        src="https://gtech.systems/wp-content/uploads/2020/02/3a-Copiar.png"
+                        class="card-img-top"
+                        alt="PC Gamer Ultra">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            PC para juegos
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PC Gamer Ultra - GeForce RTX 5070 12GB
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Gráfica: NVIDIA RTX 5070 Ti 16GB<br>
+                            Procesador: AMD Ryzen 7600<br>
+                            Board: Chipset B650 Wi-Fi<br>
+                            RAM: 32GB DDR5 5600Mhz |
+                            SSD: 1TB NVMe
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $8,836,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $7,510,600 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+
+                            <i class="bi bi-cart-plus"></i>
+
+                            Añadir al carrito
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- PORTÁTILES GAMING -->
+
+
+<section id="portatiles" class="py-5 bg-white">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-primary mb-2">
+                PORTÁTILES
+            </span>
+
+            <h2 class="fw-bold">
+                Portátiles Gaming
+            </h2>
+
+            <p class="text-muted">
+                Potencia y movilidad en un solo equipo.
+            </p>
+
+        </div>
+
+
+        <!-- PORTÁTIL DESTACADO -->
+
+        <div class="row align-items-center g-4 mb-5">
+
+            <div class="col-md-8">
+
+                <img
+                    src="/static/img/Portatil optimus prime.jpg"
+                    class="img-fluid rounded"
+                    alt="Portátil gamer">
+
+            </div>
+
+
+            <div class="col-md-4">
+
+                <div class="card shadow-sm border-0 h-100">
+
+                    <img
+                        src="/static/img/Portatil Gamer.jpg"
+                        class="card-img-top"
+                        alt="Portátil gamer">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title fw-bold">
+                            Los Mejores Portátiles 2026
+                        </h5>
+
+                        <p class="card-text text-muted">
+
+                            Diseña, crea, trabaja y juega desde donde
+                            quieras con las mejores marcas de portátiles
+                            gamer y profesionales calidad precio de 2026.
+
+                        </p>
+
+                        <a
+                            href="#ofertas-portatiles"
+                            class="btn btn-primary">
+
+                            Ver ofertas
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+<!-- OFERTAS PORTÁTILES -->
+
+
+<section id="ofertas-portatiles" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-danger mb-2">
+                DESCUENTOS
+            </span>
+
+            <h2 class="fw-bold">
+                🔥 Ofertas en Portátiles Gaming
+            </h2>
+
+            <p class="text-muted">
+                Grandes descuentos en nuestros portátiles.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- OFERTA PORTÁTIL 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-danger badge-descuento">
+                        -15% OFF
+                    </span>
+
+                    <img
+                        src="/static/img/Portatil N1.jpg"
+                        class="card-img-top"
+                        alt="Portátil Asus Tuf">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            Portátil Gaming
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            Portátil Asus Tuf Gaming A15
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: AMD Ryz 7 7445HS<br>
+                            RAM: 16GB DDR5 | SSD: 512GB NVMe<br>
+                            Pantalla: 15,6″ FHD |
+                            Gráfica: RTX-3050<br>
+                            Color: Gris
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $3.099.000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $2.634.150 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Comprar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PORTÁTIL 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -15% OFF
+                    </span>
+
+                    <img
+                        src="/static/img/Portatil Asus Gaming.jpg"
+                        class="card-img-top"
+                        alt="Portátil Asus Gaming">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            Portátil Gaming
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            Portátil Asus Gaming V3607VH
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: Intel Core 7 240H<br>
+                            RAM: 16GB DDR5 | SSD: 1TB NVMe<br>
+                            Pantalla: 16″ WUXGA |
+                            Gráfica: RTX-5050<br>
+                            Color: Negro
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $5.409.000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $4.597.650 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Comprar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PORTÁTIL 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -15% OFF
+                    </span>
+
+                    <img
+                        src="/static/img/Portatil Asus Tuf Gaming.jpg"
+                        class="card-img-top"
+                        alt="Portátil Asus Tuf A16">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            Portátil Gaming
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            Portátil Asus Tuf Gaming A16
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: AMD Ryz 9 8940HX<br>
+                            RAM: 16GB DDR5 | SSD: 512GB NVMe<br>
+                            Pantalla: 16″ WUXGA |
+                            Gráfica: RTX-5060<br>
+                            Color: Gris
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $6.589.000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $5.600.650 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Comprar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PORTÁTIL 4 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-danger badge-descuento">
+                        -15% OFF
+                    </span>
+
+                    <img
+                        src="https://gamerscolombia.com/cdn/shop/files/ImagenesPaginaGamers_3.png?v=1784393072&width=1200"
+                        class="card-img-top"
+                        alt="MSI Thin 15">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            Portátil Gaming
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            MSI Thin 15 - GeForce RTX 3050
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Gráfica: RTX 3050 (4GB)<br>
+                            Procesador: Intel Core i7-13620H<br>
+                            RAM: DDR4 Ampliable | SSD: 512GB<br>
+                            Pantalla: 15.6" FHD 144Hz |
+                            Win 11 PRO
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $3,199,900 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $2.719.915 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Comprar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PORTÁTIL 5 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -15% OFF
+                    </span>
+
+                    <img
+                        src="https://gamerscolombia.com/cdn/shop/files/ImagenesPaginaGamers-2026-09-26T113735.535.png?v=1790440761&width=1200"
+                        class="card-img-top"
+                        alt="Lenovo LOQ">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            Portátil Gaming
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PORTÁTIL LENOVO LOQ
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: Intel Core i5-13450HX<br>
+                            RAM: 32GB DDR5 | SSD: 512GB NVMe<br>
+                            Gráfica: RTX 5050 8GB GDDR7<br>
+                            Pantalla: 15.6" FHD 144Hz 300 nits
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $5,089,900 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $4.326.415 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Comprar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- OFERTA PORTÁTIL 6 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm card-oferta position-relative">
+
+                    <span class="badge bg-warning text-dark badge-descuento">
+                        -15% OFF
+                    </span>
+
+                    <img
+                        src="https://gamerscolombia.com/cdn/shop/files/ImagenesPaginaGamers_2.png?v=1784392008&width=1200"
+                        class="card-img-top"
+                        alt="Gigabyte GA6H">
+
+                    <div class="card-body d-flex flex-column">
+
+                        <span class="text-uppercase text-muted fs-7 fw-bold mb-1">
+                            Portátil Gaming
+                        </span>
+
+                        <h5 class="card-title fw-bold">
+                            PORTÁTIL GIGABYTE GA6H
+                        </h5>
+
+                        <p class="card-text text-muted small flex-grow-1">
+
+                            Procesador: Intel Core i7-13620H<br>
+                            Gráfica: NVIDIA RTX 5070<br>
+                            RAM: 16GB DDR5 | SSD: 1TB NVMe<br>
+                            Pantalla: 15.6" Full HD
+
+                        </p>
+
+                        <div class="mb-3">
+
+                            <span class="precio-anterior d-block">
+                                Antes: $8,836,000 COP
+                            </span>
+
+                            <span class="precio-actual">
+                                Después: $7,510,600 COP
+                            </span>
+
+                        </div>
+
+                        <button class="btn btn-primary w-100">
+                            Comprar
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- CATEGORÍAS -->
+
+
+<section id="categorias" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-primary mb-2">
+                CATEGORÍAS
+            </span>
+
+            <h2 class="fw-bold">
+                Explora nuestras categorías
+            </h2>
+
+            <p class="text-muted">
+                Encuentra fácilmente el producto que estás buscando.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <div class="col-6 col-md-3">
+
+                <a
+                    href="#tienda"
+                    class="text-decoration-none">
+
+                    <div class="card text-center h-100 shadow-sm p-4">
+
+                        <i class="bi bi-pc-display display-4 text-primary"></i>
+
+                        <h5 class="fw-bold mt-3">
+                            PC Gamers
+                        </h5>
+
+                        <p class="text-muted mb-0">
+                            Equipos Gaming
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <a
+                    href="#portatiles"
+                    class="text-decoration-none">
+
+                    <div class="card text-center h-100 shadow-sm p-4">
+
+                        <i class="bi bi-laptop display-4 text-primary"></i>
+
+                        <h5 class="fw-bold mt-3">
+                            Portátiles
+                        </h5>
+
+                        <p class="text-muted mb-0">
+                            Gaming y trabajo
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <a
+                    href="#tienda"
+                    class="text-decoration-none">
+
+                    <div class="card text-center h-100 shadow-sm p-4">
+
+                        <i class="bi bi-keyboard display-4 text-primary"></i>
+
+                        <h5 class="fw-bold mt-3">
+                            Periféricos
+                        </h5>
+
+                        <p class="text-muted mb-0">
+                            Teclados y mouse
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+            <div class="col-6 col-md-3">
+
+                <a
+                    href="#tienda"
+                    class="text-decoration-none">
+
+                    <div class="card text-center h-100 shadow-sm p-4">
+
+                        <i class="bi bi-headphones display-4 text-primary"></i>
+
+                        <h5 class="fw-bold mt-3">
+                            Audio
+                        </h5>
+
+                        <p class="text-muted mb-0">
+                            Audífonos y sonido
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- MARCAS -->
+
+
+<section id="marcas" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-dark mb-2">
+                MARCAS
+            </span>
+
+            <h2 class="fw-bold">
+                Marcas disponibles
+            </h2>
+
+            <p class="text-muted">
+                Trabajamos con algunas de las marcas más reconocidas
+                del mundo tecnológico.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4 align-items-center text-center">
+
+
+            <div class="col-6 col-md-4 col-lg-2">
+
+                <div class="card shadow-sm p-4 h-100">
+
+                    <i class="bi bi-cpu display-5"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        ASUS
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-4 col-lg-2">
+
+                <div class="card shadow-sm p-4 h-100">
+
+                    <i class="bi bi-cpu display-5"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        MSI
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-4 col-lg-2">
+
+                <div class="card shadow-sm p-4 h-100">
+
+                    <i class="bi bi-laptop display-5"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        Lenovo
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-4 col-lg-2">
+
+                <div class="card shadow-sm p-4 h-100">
+
+                    <i class="bi bi-laptop display-5"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        HP
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-4 col-lg-2">
+
+                <div class="card shadow-sm p-4 h-100">
+
+                    <i class="bi bi-display display-5"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        Acer
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+            <div class="col-6 col-md-4 col-lg-2">
+
+                <div class="card shadow-sm p-4 h-100">
+
+                    <i class="bi bi-gpu-card display-5"></i>
+
+                    <h5 class="fw-bold mt-3">
+                        NVIDIA
+                    </h5>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- EVENTOS -->
+>
+
+<section id="eventos" class="py-5 eventos-section">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-primary mb-2">
+                KD TECH
+            </span>
+
+            <h2 class="fw-bold">
+                Eventos y novedades
+            </h2>
+
+            <p class="text-muted">
+                Mantente al día con nuestros eventos,
+                actividades y novedades tecnológicas.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- EVENTO 1 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm border-0 evento-card">
+
+                    <img
+                        src="/static/img/torneo KD.png"
+                        class="card-img-top"
+                        alt="Evento Gamer">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-danger mb-3">
+                            Próximamente
+                        </span>
+
+                        <h5 class="fw-bold">
+                            Torneo Gamer KD Tech
+                        </h5>
+
+                        <p class="text-muted">
+                            Participa en nuestros próximos torneos
+                            y demuestra tus habilidades como gamer.
+                        </p>
+
+                        <div class="evento-info">
+
+                            <i class="bi bi-calendar-event"></i>
+
+                            Fecha por confirmar
+
+                        </div>
+
+                        <div class="evento-info">
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            Bogotá / Online
+
+                        </div>
+
+                        <button class="btn btn-primary w-100 mt-3">
+                            Ver evento
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EVENTO 2 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm border-0 evento-card">
+
+                    <img
+                        src="/static/img/feria tec.png"
+                        class="card-img-top"
+                        alt="Evento tecnológico">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-success mb-3">
+                            Tecnología
+                        </span>
+
+                        <h5 class="fw-bold">
+                            Feria Tecnológica
+                        </h5>
+
+                        <p class="text-muted">
+                            Conoce las novedades y tendencias más
+                            importantes del mundo tecnológico.
+                        </p>
+
+                        <div class="evento-info">
+
+                            <i class="bi bi-calendar-event"></i>
+
+                            Fecha por confirmar
+
+                        </div>
+
+                        <div class="evento-info">
+
+                            <i class="bi bi-geo-alt"></i>
+
+                            Evento presencial
+
+                        </div>
+
+                        <button class="btn btn-primary w-100 mt-3">
+                            Ver evento
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- EVENTO 3 -->
+
+            <div class="col-md-6 col-lg-4">
+
+                <div class="card h-100 shadow-sm border-0 evento-card">
+
+                    <img
+                        src="/static/img/lanzamientos.jpg"
+                        class="card-img-top"
+                        alt="Lanzamiento de productos">
+
+                    <div class="card-body">
+
+                        <span class="badge bg-warning text-dark mb-3">
+                            Novedad
+                        </span>
+
+                        <h5 class="fw-bold">
+                            Lanzamiento de productos
+                        </h5>
+
+                        <p class="text-muted">
+                            Descubre nuevos productos, componentes
+                            y accesorios disponibles en KD Tech.
+                        </p>
+
+                        <div class="evento-info">
+
+                            <i class="bi bi-calendar-event"></i>
+
+                            Próximamente
+
+                        </div>
+
+                        <div class="evento-info">
+
+                            <i class="bi bi-shop"></i>
+
+                            Tienda KD Tech
+
+                        </div>
+
+                        <button class="btn btn-primary w-100 mt-3">
+                            Ver novedades
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- CONTACTO -->
+
+
+<section id="contacto" class="py-5">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-primary mb-2">
+                CONTACTO
+            </span>
+
+            <h2 class="fw-bold">
+                Contáctenos
+            </h2>
+
+            <p class="text-muted">
+                ¿Tienes alguna pregunta? Estamos para ayudarte.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- INFORMACIÓN -->
+
+            <div class="col-md-5">
+
+                <div class="card shadow-sm border-0 h-100">
+
+                    <div class="card-body p-4">
+
+                        <h4 class="fw-bold mb-4">
+                            Información de contacto
+                        </h4>
+
+
+                        <div class="d-flex mb-4">
+
+                            <i class="bi bi-geo-alt-fill fs-3 text-primary me-3"></i>
+
+                            <div>
+
+                                <h6 class="fw-bold">
+                                    Ubicación
+                                </h6>
+
+                                <p class="text-muted mb-0">
+                                    Bogotá, Colombia
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="d-flex mb-4">
+
+                            <i class="bi bi-telephone-fill fs-3 text-primary me-3"></i>
+
+                            <div>
+
+                                <h6 class="fw-bold">
+                                    Teléfono
+                                </h6>
+
+                                <p class="text-muted mb-0">
+                                    +57 300 000 0000
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="d-flex mb-4">
+
+                            <i class="bi bi-envelope-fill fs-3 text-primary me-3"></i>
+
+                            <div>
+
+                                <h6 class="fw-bold">
+                                    Correo
+                                </h6>
+
+                                <p class="text-muted mb-0">
+                                    KD-Tech@gmail.com
+                                </p>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="d-flex">
+
+                            <i class="bi bi-clock-fill fs-3 text-primary me-3"></i>
+
+                            <div>
+
+                                <h6 class="fw-bold">
+                                    Horario
+                                </h6>
+
+                                <p class="text-muted mb-0">
+                                    Lunes a Viernes: 9:00 AM - 6:00 PM
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- FORMULARIO -->
+
+            <div class="col-md-7">
+
+                <div class="card shadow-sm border-0">
+
+                    <div class="card-body p-4">
+
+                        <h4 class="fw-bold mb-4">
+                            Envíanos un mensaje
+                        </h4>
+
+
+                        <form>
+
+                            <div class="row">
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Nombre
+                                    </label>
+
+                                    <input
+                                        type="text"
+                                        class="form-control"
+                                        placeholder="Tu nombre">
+
+                                </div>
+
+
+                                <div class="col-md-6 mb-3">
+
+                                    <label class="form-label">
+                                        Correo electrónico
+                                    </label>
+
+                                    <input
+                                        type="email"
+                                        class="form-control"
+                                        placeholder="correo@ejemplo.com">
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Asunto
+                                </label>
+
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    placeholder="¿En qué podemos ayudarte?">
+
+                            </div>
+
+
+                            <div class="mb-3">
+
+                                <label class="form-label">
+                                    Mensaje
+                                </label>
+
+                                <textarea
+                                    class="form-control"
+                                    rows="5"
+                                    placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                            </div>
+
+
+                            <button
+                                type="submit"
+                                class="btn btn-primary">
+
+                                <i class="bi bi-send"></i>
+
+                                Enviar mensaje
+
+                            </button>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- TESTIMONIOS -->
+
+
+<section id="testimonios" class="py-5 bg-light">
+
+    <div class="container">
+
+        <div class="text-center mb-5">
+
+            <span class="badge bg-success mb-2">
+                CLIENTES
+            </span>
+
+            <h2 class="fw-bold">
+                Lo que dicen nuestros clientes
+            </h2>
+
+            <p class="text-muted">
+                La experiencia de nuestros compradores.
+            </p>
+
+        </div>
+
+
+        <div class="row g-4">
+
+
+            <!-- TESTIMONIO 1 -->
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="card-body">
+
+                        <div class="mb-3 text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                        <p class="text-muted">
+
+                            "Excelente atención y muy buenos productos.
+                            Mi PC llegó en perfecto estado."
+
+                        </p>
+
+                        <h6 class="fw-bold">
+                            Cliente KD Tech
+                        </h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TESTIMONIO 2 -->
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="card-body">
+
+                        <div class="mb-3 text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                        <p class="text-muted">
+
+                            "Encontré el portátil que estaba buscando
+                            y a un excelente precio."
+
+                        </p>
+
+                        <h6 class="fw-bold">
+                            Cliente KD Tech
+                        </h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- TESTIMONIO 3 -->
+
+            <div class="col-md-4">
+
+                <div class="card h-100 shadow-sm border-0">
+
+                    <div class="card-body">
+
+                        <div class="mb-3 text-warning">
+
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+
+                        </div>
+
+                        <p class="text-muted">
+
+                            "Muy buena tienda para conseguir productos
+                            tecnológicos."
+
+                        </p>
+
+                        <h6 class="fw-bold">
+                            Cliente KD Tech
+                        </h6>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- FOOTER -->
+
+
+<footer class="bg-dark text-white py-4">
+
+    <div class="container">
+
+        <div class="row">
+
+
+            <!-- LOGO -->
+
+            <div class="col-md-4 mb-3">
+
+                <h4 class="fw-bold">
+
+                    <i class="bi bi-pc-display"></i>
+
+                    KD Tech
+
+                </h4>
+
+                <p class="text-white-50">
+
+                    Tu tienda virtual de tecnología,
+                    computadores y accesorios.
+
+                </p>
+
+            </div>
+
+
+            <!-- ENLACES -->
+
+            <div class="col-md-4 mb-3">
+
+                <h5>
+                    Enlaces rápidos
+                </h5>
+
+                <ul class="list-unstyled">
+
+                    <li>
+                        <a
+                            href="#inicio"
+                            class="text-white text-decoration-none">
+                            Inicio
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#tienda"
+                            class="text-white text-decoration-none">
+                            Tienda
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#ofertas"
+                            class="text-white text-decoration-none">
+                            Ofertas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#eventos"
+                            class="text-white text-decoration-none">
+                            Eventos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="#contacto"
+                            class="text-white text-decoration-none">
+                            Contacto
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+
+            <!-- REDES -->
+
+            <div class="col-md-4 mb-3">
+
+                <h5>
+                    Síguenos
+                </h5>
+
+                <div class="fs-3">
+
+                    <a
+                        href="#"
+                        class="text-white me-3">
+
+                        <i class="bi bi-facebook"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="text-white me-3">
+
+                        <i class="bi bi-instagram"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="text-white me-3">
+
+                        <i class="bi bi-tiktok"></i>
+
+                    </a>
+
+
+                    <a
+                        href="#"
+                        class="text-white">
+
+                        <i class="bi bi-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+
+        <hr>
+
+
+        <div class="text-center text-white-50">
+
+            <p class="mb-0">
+
+                © 2026 KD Tech.
+                Todos los derechos reservados.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+<!-- CARRITO -->
+
+
+<div
+    class="offcanvas offcanvas-end"
+    tabindex="-1"
+    id="carritoOffcanvas"
+    aria-labelledby="carritoOffcanvasLabel">
+
+
+    <div class="offcanvas-header">
+
+        <h5
+            class="offcanvas-title"
+            id="carritoOffcanvasLabel">
+
+            <i class="bi bi-cart3"></i>
+
+            Mi carrito
+
+        </h5>
+
+
+        <button
+            type="button"
+            class="btn-close text-reset"
+            data-bs-dismiss="offcanvas"
+            aria-label="Cerrar">
+        </button>
+
+    </div>
+
+
+    <div class="offcanvas-body">
+
+        <div class="text-center py-5">
+
+            <i class="bi bi-cart-x display-1 text-muted"></i>
+
+            <h5 class="mt-3">
+                Tu carrito está vacío
+            </h5>
+
+            <p class="text-muted">
+                Agrega productos para verlos aquí.
+            </p>
+
+
+            <a
+                href="#tienda"
+                class="btn btn-primary"
+                data-bs-dismiss="offcanvas">
+
+                Ir a la tienda
+
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+
+<!-- BOOTSTRAP JAVASCRIPT -->
+
+
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js">
+</script>
+
+
+
+
+<!-- CERRAR NAVBAR AUTOMÁTICAMENTE EN MÓVIL -->
+
+
+<script>
+
+    document
+        .querySelectorAll('.navbar-nav .nav-link')
+        .forEach(function (link) {
+
+            link.addEventListener('click', function () {
+
+                const navbar =
+                    document.querySelector('.navbar-collapse');
+
+                if (navbar.classList.contains('show')) {
+
+                    const bsCollapse =
+                        new bootstrap.Collapse(navbar, {
+                            toggle: false
+                        });
+
+                    bsCollapse.hide();
+
+                }
+
+            });
+
+        });
+
+</script>
+
+
+</body>
+
+</html>
+```
